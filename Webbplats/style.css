@@ -1,0 +1,78 @@
+body{
+    background-color:coral;
+}
+
+
+
+
+.wrapper{
+ width: 95%;
+ margin: 0 auto;
+ background-color: coral;
+ text-align: center;
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ grid-template-rows: auto auto auto;
+ grid-gap: 15px;
+ grid-template-areas:
+ "header header"
+ "nav nav"
+ "main aside"
+ "footer footer";
+}
+
+#sida2 > .wrapper{
+
+}
+
+header{
+    grid-area: header;
+    background-color:midnightblue;
+}
+
+nav{
+    grid-area: nav;
+}
+
+nav>ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    padding: 0; 
+    margin: 0;
+    height: 100%
+}
+
+nav li{
+    list-style-type: none; 
+    text-align: center;
+    font-size: 2em;
+    border: 1px solid crimson;
+    border-radius: 15px;
+    margin-right 15px;
+    line-height: 2;
+    margin: 10px;
+    background-color:royalblue;
+
+    
+}
+
+nav li:last-of-type{
+    margin-right: 0;
+}
+
+section{
+    text-align: left;
+    color: limegreen;
+}
+
+a{
+    text-decoration: none;
+}
+
+.länk{
+    text-decoration: none;
+}
+
+.bild1{
+    align: left;
+}
