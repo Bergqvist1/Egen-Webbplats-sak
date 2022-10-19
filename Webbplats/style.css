@@ -11,7 +11,7 @@ body{
  background-color: coral;
  text-align: center;
  display: grid;
- grid-template-columns: 2fr 1fr;
+ grid-template-columns: 3fr;
  grid-template-rows: auto auto auto;
  grid-gap: 15px;
  grid-template-areas:
@@ -60,6 +60,12 @@ nav li:last-of-type{
     margin-right: 0;
 }
 
+footer{
+    margin-left: 40%;
+    color:indigo;
+    font-family: fantasy;
+}
+
 section{
     text-align: left;
     color: limegreen;
@@ -69,10 +75,35 @@ a{
     text-decoration: none;
 }
 
-.länk{
+.link{
     text-decoration: none;
+
 }
 
-.bild1{
-    align: left;
+.pic1{
+    display: block;
+    margin-right: auto;
+    width: 400px;
+
+}
+
+.sida2link{
+    color:limegreen
+}
+
+
+h2{
+    margin-left: 40%;
+    font-style: italic;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+    color:springgreen;
+}
+
+.pic2{
+    display: block;
+    margin-bottom: auto;
+    width: 500px;
+    height: 400px;
 }
