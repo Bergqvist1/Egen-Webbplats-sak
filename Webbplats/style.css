@@ -21,10 +21,6 @@ body{
  "footer footer";
 }
 
-#sida2 > .wrapper{
-
-}
-
 header{
     grid-area: header;
     background-color:midnightblue;
@@ -48,7 +44,7 @@ nav li{
     font-size: 2em;
     border: 1px solid crimson;
     border-radius: 15px;
-    margin-right 15px;
+    margin-right: 15px;
     line-height: 2;
     margin: 10px;
     background-color:royalblue;
@@ -87,7 +83,7 @@ a{
 
 }
 
-.sida2link{
+.page2link{
     color:limegreen
 }
 
@@ -107,3 +103,36 @@ h2{
     width: 500px;
     height: 400px;
 }
+
+table,tr,td,th{
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+tr:nth-child(2)
+{
+    background-color: blueviolet;
+}
+
+tr:nth-child(3), tr:nth-child(4), tr:nth-child(5)
+{
+    background-color: crimson;
+}
+
+table{
+    margin-right: 70%;
+    padding-left: 10%;
+}
+
+.header2{
+    margin-right: 25%;
+    color:dodgerblue;
+}
+
+.lista{
+    color:cadetblue;
+}
+/* måste fixa ul li så att mina punkter kommer under rubriken */
