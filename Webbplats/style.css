@@ -110,16 +110,17 @@ table,tr,td,th{
     border-style: solid;
     border-collapse: collapse;
     font-size: 15px;
+    color:crimson;
 }
 
-tr:nth-child(2)
+tr:nth-child(2), tr:nth-child(4)
 {
-    background-color: blueviolet;
+    background-color: White;
 }
 
-tr:nth-child(3), tr:nth-child(4), tr:nth-child(5)
+tr:nth-child(1), tr:nth-child(3), tr:nth-child(5)
 {
-    background-color: crimson;
+    background-color: black;
 }
 
 table{
@@ -129,10 +130,20 @@ table{
 
 .header2{
     margin-right: 25%;
+    text-align: center;
     color:dodgerblue;
 }
 
 .lista{
     color:cadetblue;
+    padding-left: 50%;
+    margin-right: 20%;
+    text-align: left;
+
 }
 /* måste fixa ul li så att mina punkter kommer under rubriken */
+
+p{
+    color:indigo;
+    
+}
