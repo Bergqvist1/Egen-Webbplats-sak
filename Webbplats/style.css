@@ -1,14 +1,14 @@
-body{
-    background-color:coral;
+body{               /* bakgrundsfärgen till webbplatsen. */
+    background-color: indigo;
 }
 
 
 
 
-.wrapper{
+.wrapper{          /*  Detta är griden som gör att man får en grid-layout/ struktur på själva webbplatsen, denna skapar kolummner, rader, storlek mellan de olika gridarna och vilka gridar som finns.   */
  width: 95%;
  margin: 0 auto;
- background-color: coral;
+ background-color: indigo;
  text-align: center;
  display: grid;
  grid-template-columns: 3fr;
@@ -21,25 +21,25 @@ body{
  "footer footer";
 }
 
-header{
+header{                                      /* Denna bestämmer färgen på min header/huvudmeny. Och gör att headeren får en egen plats i griden med  */
     grid-area: header;
     background-color:midnightblue;
 }
 
-nav{
+nav{                              /*  Denna skapar en plats åt min nav, nav är även skrivet som en av grid-template-areas i .wrapper */ 
     grid-area: nav;
 }
 
-nav>ul{
-    display: grid;
+nav>ul{                                /*  Denna säger till att ul är ett barn till nav, den kommer efter nav i html koden. Koden gör att den får en grid plats, hur står i kolumner   */
+    display: grid;                       /*  Hur stor padding och marginal den ska ha samt höjden på den.   */
     grid-template-columns: 1fr 1fr 1fr; 
     padding: 0; 
     margin: 0;
     height: 100%
 }
 
-nav li{
-    list-style-type: none; 
+nav li{                                /* Denna kod snutten är det som styr den tryckbara knapparna i min globala meny så att t.ex kanten runt de är i färgen "Crimson,  */
+    list-style-type: none;             /* texten är centrerad, storleken är 2em, hur stor kanten är och vilken bakgrunds färg den har */
     text-align: center;
     font-size: 2em;
     border: 1px solid crimson;
@@ -52,43 +52,43 @@ nav li{
     
 }
 
-nav li:last-of-type{
+nav li:last-of-type{        /* Denna styr storleken på den sista navigations listan i min globala meny, denna är till för att allt ska se symmetriskt och snyggt ut. */
     margin-right: 0;
 }
 
-footer{
+footer{    /* Denna styr hur stor footern ska vara, vilket typsnitt texten i min footer har och vilken färg den har. */
     margin-left: 40%;
-    color:indigo;
+    color: crimson;
     font-family: fantasy;
 }
 
-section{
+section{     /* Denna styr hur texten är centrerad och vilken färg texten är i min section  */
     text-align: left;
     color: limegreen;
 }
 
-a{
+a{   /* Denna gör att varje länk som ligger i "a" taggen inte får något understreck och eftersom jag har en länk i texten jag har gjort så ser det väldigt snyggt ut om man inte har ett understreck.  */
     text-decoration: none;
 }
 
-.link{
+.link{     /* Denna gör att länkarna till t.ex den youtube videon jag har länkat i en bild samt min github inte har något understreck  */ 
     text-decoration: none;
 
 }
 
-.pic1{
+.pic1{   /* Denna koden är till för att göra så att min bild är en del av griden, den är 400px bred och har en auto justerad marginal */
     display: block;
     margin-right: auto;
     width: 400px;
 
 }
 
-.page2link{
+.page2link{   /*  Denna är till för att göra så att länken jag har i texten ska få samma färg som själva texten och gör då att den passar ihop med den vanliga, blir väldigt snyggt   */
     color:limegreen
 }
 
 
-h2{
+h2{ /* Denna är till för att bestämma aspekter för min andra rubrik t.ex vilket typsnitt, storlek, tjocklek, understreck, färg och marginal */
     margin-left: 40%;
     font-style: italic;
     font-size: 2em;
@@ -97,14 +97,14 @@ h2{
     color:springgreen;
 }
 
-.pic2{
+.pic2{ /* Denna är till för att göra så att min andra bild blir en del av gridden samt hur stor den ska vara för att den ska passa in på min webbsida där den ligger */
     display: block;
     margin-bottom: auto;
     width: 500px;
     height: 400px;
 }
 
-table,tr,td,th{
+table,tr,td,th{   /* Denna bestämmer vilken färg, kant storlek, vilken typ av border den ska vara, typsnitts storlek, färg och att varje ruta inte har en till ruta i sig i min tabell */
     border-color: black;
     border-width: 3px;
     border-style: solid;
@@ -113,37 +113,37 @@ table,tr,td,th{
     color:crimson;
 }
 
-tr:nth-child(2), tr:nth-child(4)
+tr:nth-child(2), tr:nth-child(4) /* Denna bestämmer färgen på rad 2 och 4 i min tabell ska ha så att man får en zebra striping  */
 {
     background-color: White;
 }
 
-tr:nth-child(1), tr:nth-child(3), tr:nth-child(5)
+tr:nth-child(1), tr:nth-child(3), tr:nth-child(5) /* Denna bestämmer vad resten av min tabell ska ha för färg alltså rad 1,3,5 och då lir det en zebra stripad tabell */
 {
     background-color: black;
 }
 
-table{
+table{ /* Denna bestämmer hur mycket min tabell ska sticka ut och hur mycket åt höger marginalen ska vara och paddingen till vänster ska vara  */
     margin-right: 70%;
     padding-left: 10%;
 }
 
-.header2{
-    margin-right: 25%;
+.header2{ /* Här har jag gjrot en klass till min andra h2a som ligger på en av mina andra sidor som inte är den första h2an, gjorde en klass för att ville ha andra egenskaper som  */
+    margin-right: 25%;    /* h2 taggen här i CSS inte hade, ville inte att de skulle ha samma så gjorde den andra till en klass med de egenskaper jag ville ha */
     text-align: center;
     color:dodgerblue;
 }
 
-.lista{
+.lista{  /* Denna bestämmer färgen på min lista, hur marginalen och paddingen är justerade samt att texten ska vara justerad åt vänster  */
     color:cadetblue;
     padding-left: 50%;
     margin-right: 20%;
     text-align: left;
 
 }
-/* måste fixa ul li så att mina punkter kommer under rubriken */
 
-p{
-    color:indigo;
+
+p{ /* Denna gör att alla mina p taggar får färgen crimson */ 
+    color:crimson;
     
 }

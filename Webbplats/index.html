@@ -1,46 +1,36 @@
-<!DOCTYPE html>
-<html lang="sv">
+<!DOCTYPE html> <!-- Berättar för webbläsaren vilket typ av dokument detta är -->
+<html lang="sv"> <!-- Denna säger till vilket språk websidan kommer skrivas i  -->
  
-<head>
-    <meta charset="UTF-8">
-    <title> Webbplats </title>
-    <link href="style.css" rel="stylesheet">
- 
+<head> <!-- funkar som en kontainer för data, allt i headen visas inte på sidan -->
+    <meta charset="UTF-8"> <!-- specificerar vilken typ av teckenkodning html dokumentet som används-->
+    <title> Webbplats </title> <!-- definerar tilten av hmtl dokumentet -->
+    <link href="style.css" rel="stylesheet"> <!-- länk till css dokument, gör så att css koden fungerar på html sidan -->
 </head>
-<body>
- <div class="wrapper">   
-    <header>
-        <h1> Meny </h1>
- 
-   
+<body> <!-- Själva kroppen i ett html dokument och innehåller all kod som ska finnas i dokumentet -->
+ <div class="wrapper">   <!-- wrappern skappar en grid för hela sidan, div delar upp dokumentet i delar men min div sträcker sig genom all kod för att vill ha samma grid för allt -->
+    <header> <!-- är till som huvud meny i den globala menyn -->
+        <h1> Meny </h1> <!-- Min första rubrik, även det som min globala meny heter.  -->
     </header>
  
  
-   <nav>
-    <ul>
-        <li> <a href="index.html"> Startsida </a> </li>
-        <li> <a href="sida2.html"> Sida 2 </a> </li>
-        <li> <a href="sida3.html"> Sida 3 </a> </li>
+   <nav> <!-- navigations menyn för mina olika länkar -->
+    <ul> <!-- min oordnade lista som även är ett barn till nav. -->
+        <li> <a href="index.html"> Startsida </a> </li> <!-- Min länk till startsidan och länk till de dokumentet som den hänvisar till -->
+        <li> <a href="sida2.html"> Sida 2 </a> </li> <!-- Länk till min sida 2 och länk till dokumentet som den hänvisar till -->
+        <li> <a href="sida3.html"> Sida 3 </a> </li> <!-- länk till min sida 3 och länk till dokumentet som den änvisar till -->
     </ul>
    </nav>
-   <main> 
-     <section> 
+   <main> <!-- specificerar huvuddelen av mitt dokument -->
+     <section> <!-- definerar en sektion i min main och innehåller även text -->
         Hallå! Jag heter Simon Bergqvist och jag går teknik på teknikum i klassen TE21B.
      </section>
      <section> Klicka på <a class="page2link" href="sida2.html"> Sida 2 </a> för att läsa mer om mig :) Psst du kan trycka på sida 2 i texten för att komma till sida 2!</section>
-    
+       <!-- a taggen definerar en hyper länk, den har även en klass och en href som visar vart den ska reffera till. -->
      <a class="link" href="https://github.com/Bergqvist1">
-     <img class="pic1" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github">
+     <img class="pic1" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github"> <!-- min bild på min index sida. -->
      </a>
  
    </main>
- 
- 
- 
- 
-
- 
-    
  </div>
 </body>
 </html>
